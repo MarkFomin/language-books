@@ -1,8 +1,8 @@
-.PHONY: all sample run
+.PHONY: all project run
 
-all: sample;
+all: project;
 
-sample:
+project:
 	g++ -std=c++11 -Wall main.cpp -o $@
-run: sample;
-	./sample
+run: project;
+	./project && rm project
