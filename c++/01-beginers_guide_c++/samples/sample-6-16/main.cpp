@@ -10,6 +10,7 @@ int main(){
 	//cout<<myfunc(10)<<"\n";// Ошибка, неоднозначность!
 	int (*ptr)(int) = myfunc;
 	cout<<(*ptr)(10)<<"\n";
+	cout<<ptr(15)<<"\n";
 	return 0;
 }
 int myfunc(int i){
